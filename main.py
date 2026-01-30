@@ -1,6 +1,11 @@
-def main():
-    print("Hello from vcc-assignment!")
+from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 
 
-if __name__ == "__main__":
-    main()
+app = FastAPI()
+
+
+#human readable
+@app.get("/home")
+def home():
+    return( {'message': "This is the message from Virtual machine2"})
