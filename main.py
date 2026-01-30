@@ -8,4 +8,4 @@ app = FastAPI()
 #human readable
 @app.get("/home")
 def home():
-    return( {'message': "This is the message from Virtual machine2"})
+    return( {'message': "This is the message from Virtual machine 1"})
